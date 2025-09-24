@@ -1,0 +1,52 @@
+/* Importar una fuente de Google Fonts */
+
+/* Importar fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.titulo {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    list-style: none;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task-checkbox {
+    margin-right: 10px;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.delete-btn {
+    margin-left: 15px;
+    color: #ff4d4d; /* rojo suave */
+    font-size: 1.3rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.delete-btn:hover {
+    transform: scale(1.2); /* efecto al pasar el cursor */
+}
