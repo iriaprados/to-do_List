@@ -1,7 +1,5 @@
-/* Importar una fuente de Google Fonts */
-
-/* Importar fuente de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* La fuente se importa de una API de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 
 .titulo {
     font-family: 'Pacifico', cursive;
@@ -49,4 +47,47 @@ li.completed span {
 
 .delete-btn:hover {
     transform: scale(1.2); /* efecto al pasar el cursor */
+}
+
+/* Input y botón de agregar tarea  */
+.texto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo cuadro de texto, para el input de la tarea */
+#task-input {
+    flex: 1; 
+    max-width: 400px;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px 0 0 8px; 
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#task-input:focus {
+    border-color: #888;
+}
+
+#task-input::placeholder {
+    color: #bbb;
+    font-style: italic;
+}
+
+/* Estilo del botón de agregar tarea */
+.enter-btn {
+    padding: 0 15px;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0 8px 8px 0; 
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.enter-btn:hover {
+    background: #333;
 }
